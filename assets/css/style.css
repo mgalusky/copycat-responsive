@@ -63,6 +63,11 @@ main{
   overflow:auto;
   padding:40px 75px;
 }
+@media screen and (max-width: 600px){
+  main {
+    padding:20px 45px;
+  }
+}
 div[class*="col-"]{
   float:left;
   box-sizing:border-box;
@@ -103,7 +108,7 @@ div[class*="col-"]{
 }
 @media screen and (max-width: 600px){
   .profile .image{
-    width: 42%;
+    width: 35%;
     float: left;
   }
 }
@@ -118,10 +123,12 @@ div[class*="col-"]{
 }
 @media screen and (max-width: 600px){
   .profile .bio{
-    max-width: 100%;
+    width: 50%;
     float: left;
-/*    font-size: 60%;*/
-    margin: 0, 0, 0, 15px;
+    font-size: 95%;
+    margin-top:0;
+    margin-left:25px;
+    padding:0 15px 8px 15px;
   }
 }
 .profile .bio .joined{
@@ -140,13 +147,29 @@ div[class*="col-"]{
 .content{
   padding:25px;
 }
+@media screen and (max-width: 600px) {
+  .content{
+    padding:25px 0;
+  }
+}
 .content .stats{
   padding:20px;
   overflow:auto;
   font-size:20px;
 }
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .content .stats{
+
+  }
+}*/
+@media screen and (max-width: 600px) {
+  .content .stats .following{
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content .stats .followers .primary-text{
+    display: inline-block;
   }
 }
 .content .tweets{
@@ -181,12 +204,28 @@ div[class*="col-"]{
 .suggestions{
   padding:25px 0 25px 25px;
 }
+@media screen and (max-width: 600px){
+  .suggestions{
+    padding: 25px 0;
+  }
+}
 .suggestions .list{
   padding:0 25px 25px 25px;
   text-align:center;
 }
+@media screen and (max-width: 600px){
+  .suggestions .list{
+    padding:0 0 12px 0;
+  }
+}
 .suggestions .list .user{
   margin:25px 0;
+}
+@media screen and (max-width: 600px){
+  .suggestions .list .user{
+    display: inline-block;
+    margin: 0 12px;
+  }
 }
 .suggestions .list .user img{
   display:block;
