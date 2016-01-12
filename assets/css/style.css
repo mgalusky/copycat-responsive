@@ -48,6 +48,11 @@ header .text{
   font-size:24px;
   margin-left:10px;
 }
+@media screen and (max-width: 600px){
+  header .text{
+    display: none;
+  }
+}
 header nav{
   float:right;
 }
@@ -65,8 +70,18 @@ div[class*="col-"]{
 .col-quarter{
   width:25%;
 }
+@media screen and (max-width: 600px){
+  .col-quarter{
+    width: 90%;
+  }
+}
 .col-half{
   width:50%;
+}
+@media screen and (max-width: 600px){
+  .col-half{
+    width: 90%;
+  }
 }
 .col-three-quarters{
   width:75%;
@@ -78,16 +93,46 @@ div[class*="col-"]{
   padding:25px 25px 25px 0;
   text-align:center;
 }
+@media screen and (max-width: 600px){
+  .profile{
+    padding:10px 10px 10px 0;
+  }
+}
 .profile .image img{
   vertical-align:middle;
+}
+@media screen and (max-width: 600px){
+  .profile .image{
+    width: 42%;
+    float: left;
+  }
+}
+@media screen and (max-width: 600px){
+  .profile .image img{
+    max-width: 100%;
+  }
 }
 .profile .bio{
   margin-top:25px;
   padding:0 25px 15px 25px;
 }
+@media screen and (max-width: 600px){
+  .profile .bio{
+    max-width: 100%;
+    float: left;
+/*    font-size: 60%;*/
+    margin: 0, 0, 0, 15px;
+  }
+}
 .profile .bio .joined{
   border-top:1px solid #ccc;
   padding-top:15px;
+}
+
+@media screen and (max-width: 600px){
+  .profile .bio .joined{
+    display: none;
+  }
 }
 
 /* CONTENT */
@@ -99,6 +144,10 @@ div[class*="col-"]{
   padding:20px;
   overflow:auto;
   font-size:20px;
+}
+@media screen and (max-width: 600px) {
+  .content .stats{
+  }
 }
 .content .tweets{
   margin-top:25px;
@@ -120,6 +169,11 @@ div[class*="col-"]{
 }
 .content .tweets .tweet p{
   margin:0 0 12px 0;
+}
+@media screen and (max-width: 600px){
+  .actions {
+    display: none;
+  }
 }
 
 /* SUGGESTIONS */
